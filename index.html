@@ -1,72 +1,265 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset='utf-8'>
 
-  <title>johnvey/splunk-viz-particle @ GitHub</title>
-
-  <style type="text/css">
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd"> 
+ 
+<html lang="en"> 
+<head> 
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+    <title>Splunk Particle</title> 
+    <style type="text/css"> 
     body {
-      margin-top: 1.0em;
-      background-color: #f5f5f5;
-      font-family: Helvetica, Arial, FreeSans, san-serif;
-      color: #000000;
+        font: 13px helvetica, arial, sans-serif;
+        background-color: #f2f2f2;
+        padding:0;
+        margin:0;
+        color: #333;
     }
-    #container {
-      margin: 0 auto;
-      width: 700px;
+    p,ul,ol,table {
+        font: 13px georgia, times new roman, serif;
+        line-height: 140%;
     }
-    h1 { font-size: 3.8em; color: #0a0a0a; margin-bottom: 3px; }
-    h1 .small { font-size: 0.4em; }
-    h1 a { text-decoration: none }
-    h2 { font-size: 1.5em; color: #0a0a0a; }
-    h3 { text-align: center; color: #0a0a0a; }
-    a { color: #0a0a0a; }
-    .description { font-size: 1.2em; margin-bottom: 30px; margin-top: 30px; font-style: italic;}
-    .download { float: right; }
-    pre { background: #000; color: #fff; padding: 15px;}
-    hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
-    .footer { text-align:center; padding-top:30px; font-style: italic; }
-  </style>
-</head>
-
-<body>
-  <a href="http://github.com/johnvey/splunk-viz-particle"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
-
-  <div id="container">
-
-    <div class="download">
-      <a href="http://github.com/johnvey/splunk-viz-particle/zipball/master">
-        <img border="0" width="90" src="http://github.com/images/modules/download/zip.png"></a>
-      <a href="http://github.com/johnvey/splunk-viz-particle/tarball/master">
-        <img border="0" width="90" src="http://github.com/images/modules/download/tar.png"></a>
-    </div>
-
-    <h1><a href="http://github.com/johnvey/splunk-viz-particle">splunk-viz-particle</a>
-      <span class="small">by <a href="http://github.com/johnvey">johnvey</a></span></h1>
-
-    <div class="description">
-      Particle visualization
-    </div>
-
-
-    <h2>Download</h2>
-    <p>
-      You can download this project in either
-      <a href="http://github.com/johnvey/splunk-viz-particle/zipball/master">zip</a> or
-      <a href="http://github.com/johnvey/splunk-viz-particle/tarball/master">tar</a> formats.
-    </p>
-    <p>You can also clone the project with <a href="http://git-scm.com">Git</a>
-      by running:
-      <pre>$ git clone git://github.com/johnvey/splunk-viz-particle</pre>
-    </p>
-
-    <div class="footer">
-      get the source code on GitHub : <a href="http://github.com/johnvey/splunk-viz-particle">johnvey/splunk-viz-particle</a>
-    </div>
-
-  </div>
-
-  
-</body>
-</html>
+    td {
+        vertical-align: top;
+    }
+    h2 {
+        margin-top: 25px;
+        margin-left: -150px;
+        border-bottom: 1px dotted #aaa;
+        color: #666;
+        font-weight: normal;
+    }
+    li {
+        margin-bottom: .5em;
+    }
+    #wrapper {
+        margin: 0 auto;
+        width: 700px;
+        position: relative;
+    }
+    img {
+        border: 1px solid #bbb;
+        padding: 2px;
+    }
+    #masthead {
+        padding: 10px 0 0px 0;
+        margin-left: -150px;
+    }
+    #promo {
+    }
+    #tagline {
+        font-size: 24px;
+    }
+    #subtext {
+        font-size: 18px;
+    }
+    #footer {
+        margin: 50px 0 20px -150px;
+        font-size: 9px;
+        color: #666;
+    }
+    .example {
+        width: 325px;
+        height: 260px;
+        float:left;
+        margin-right: 25px;
+    }
+    </style> 
+</head> 
+<body> 
+ 
+<div id="wrapper"> 
+ 
+    <div id="masthead"> 
+        <img src="http://johnvey.github.com/splunk-viz-particle/particle_logo.png" width="222" height="45" alt="Particle Logo" style="border:0" /> 
+    </div> 
+ 
+    <div id="promo"> 
+        <p id="tagline">Watch your real-time data</p> 
+        <p id="subtext">Splunk Particle is an experiment in visualizing Splunk real-time search results. The particle animation enables you to immediately see patterns in your data as they occur.</p> 
+        <object type="application/x-shockwave-flash" width="700" height="350" data="http://www.flickr.com/apps/video/stewart.swf?v=71377" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"> <param name="flashvars" value="intl_lang=en-us&photo_secret=&photo_id=5599554598"></param> <param name="movie" value="http://www.flickr.com/apps/video/stewart.swf?v=71377"></param> <param name="bgcolor" value="#000000"></param> <param name="allowFullScreen" value="true"></param><embed type="application/x-shockwave-flash" src="http://www.flickr.com/apps/video/stewart.swf?v=71377" bgcolor="#000000" allowfullscreen="true" flashvars="intl_lang=en-us&photo_secret=&photo_id=5599554598" height="350" width="700"></embed></object> 
+        <br style="clear:both"> 
+    </div> 
+ 
+    
+    <h2>Examples</h2> 
+    <div> 
+        <div class="example"> 
+            <a href="http://johnvey.github.com/splunk-viz-particle/particle_twitter_clients.png"><img src="http://johnvey.github.com/splunk-viz-particle/particle_twitter_clients_sm.png" width="325" height="150" alt="Particle Twitter Clients Sm"></a> 
+            <p> 
+                <strong>Twitter client activity</strong> - see the distribution of clients connecting to Twitter as seen from the sample stream. The most common clients have icons associated with them.
+            </p> 
+        </div> 
+        <div class="example"> 
+            <a href="http://johnvey.github.com/splunk-viz-particle/particle_twitter_hashtags.png"><img src="http://johnvey.github.com/splunk-viz-particle/particle_twitter_hashtags_sm.png" width="325" height="150" alt="Particle Twitter Hashtags Sm"></a> 
+            <p> 
+                <strong>Tagged tweets</strong> - see the tweets that have hashtags, their client type, and the raw tweet.
+            </p> 
+        </div> 
+    </div> 
+    <div> 
+        <div class="example"> 
+            <a href="http://johnvey.github.com/splunk-viz-particle/particle_index_lag.png"><img src="http://johnvey.github.com/splunk-viz-particle/particle_index_lag_sm.png" width="325" height="150" alt="Particle Index Lag Sm"></a> 
+            <p> 
+                <strong>Splunk indexing lag</strong> - see how long it takes for data to show up in Splunk, the host it came from, and the breakdown between data that is and is not eventtyped.
+            </p> 
+        </div> 
+        <div class="example"> 
+            <a href="http://johnvey.github.com/splunk-viz-particle/particle_tcpdump.png"><img src="http://johnvey.github.com/splunk-viz-particle/particle_tcpdump_sm.png" width="325" height="150" alt="Particle Tcpdump Sm"></a> 
+            <p><strong>Tcpdump traffic</strong> - see real-time network traffic from the packet level, split by network layer, protocol, and hardware vendor.</p> 
+        </div> 
+    </div> 
+    <div> 
+        <div class="example"> 
+            <a href="http://johnvey.github.com/splunk-viz-particle/particle_source_pianoroll.png"><img src="http://johnvey.github.com/splunk-viz-particle/particle_source_pianoroll_sm.png" width="325" height="150" alt="Particle Source Pianoroll Sm"></a> 
+            <p> 
+                <strong>Splunk source pianoroll</strong> - see how Splunk receives data in both streamed and buffered-write mode.
+            </p> 
+        </div> 
+    </div> 
+    <br style="clear:both" /> 
+ 
+ 
+    <h2>Quick Start</h2> 
+    <p>To try out the particle visualizations:</p> 
+ 
+    <ol> 
+        <li>Install Splunk 4.2 (this is not compatible with 4.1 or older)</li> 
+        <li>Install the SplunkViz app from Splunkbase</li> 
+        <li>Restart Splunk</li> 
+        <li>Select the "Splunk Visualizations" app from the home screen</li> 
+    </ol> 
+ 
+    <p>At this point, you should be able to browse to the SplunkViz app home page, and view the example Splunk-specific visualizations shown above.</p> 
+ 
+    <p>To use the tcpdump example: (<strong>warning</strong>: this generates a very high volume of data)</p> 
+    <ol start="5"> 
+        <li>Install Splunk on a linux box</li> 
+        <li>Have tcpdump installed on your server</li> 
+        <li>Verify that the scripted input correctly references your tcpdump:<br><code>$SPLUNK_HOME/etc/apps/SplunkViz/bin/capture_tcpdump.sh</code></li> 
+        <li>Restart splunk <strong>as root</strong> (tcpdump requires it to sniff network traffic)</li> 
+        <li>Go to Manager &gt; Data Inputs &gt; Scripts</li> 
+        <li>Edit the entry for <code>capture_tcpdump.sh eth1</code> and replace the <code>eth1</code> with the network interface of your machine</li> 
+        <li>Save the entry</li> 
+        <li>Click the "enable" link to start capturing data</li> 
+        <li>Return to the search interface and navigate to Saved Searches &gt; Tcpdump - general visualization</li> 
+        <li>Be sure to disable the input when you're done</li> 
+    </ol> 
+ 
+    <p>To use the Twitter examples:</p> 
+    <ol start="5"> 
+        <li>Install Splunk on a linux box</li> 
+        <li> 
+            Obtain a single-use access token from Twitter at <a href="http://dev.twitter.com/pages/oauth_single_token">dev.twitter.com</a>. You'll need all four of the following parameters that are unique to your account. The last two can be generated once you register an application.
+            <ul> 
+                <li>consumer key</li> 
+                <li>consumer secret</li> 
+                <li>access token</li> 
+                <li>access token secret</li> 
+            </ul> 
+        </li> 
+        <li> 
+            Copy the file:<br /> 
+            <code>$SPLUNK_HOME/etc/apps/SplunkViz/<strong>default</strong>/tweepy.conf</code><br /> 
+            to:<br /> 
+            <code>$SPLUNK_HOME/etc/apps/SplunkViz/<strong>local</strong>/tweepy.conf</code> 
+        </li> 
+        <li>Edit the copied file and fill in the four Twitter tokens</li> 
+        <li>Restart Splunk</li> 
+        <li>Go to Manager &gt; Data Inputs &gt; Scripts</li> 
+        <li>Click the "enable" link next to the <code>capture_twitter.sh</code> item to start capturing Twitter data</li> 
+    </ol> 
+ 
+ 
+ 
+    <h2>Components</h2> 
+ 
+    <h3>Particles</h3> 
+    <p>Particles are the visual representation of discrete events that exist in a data set. These particles are generally small icons that can retain their resolution in a high density display. Currently, particles can be rendered as dots, field value labels, or images.</p> 
+ 
+    <h3>Emitters</h3> 
+    <p>Emitters are the source of particles and are responsible for producing particles that are displayed in the system. Emitters are free to produce any number of particles, in any form. Emitters must be paired with at least one collector in order to establish a visualization. There is always a root emitter that generates all of the particles.</p> 
+ 
+ 
+    <h3>Collectors</h3> 
+    <p>Collectors are the destination for particles and are responsible for identifying particles they want to collect (based on user-provided criteria). For any emitter, there are one or more collectors assigned in a priority list. For each particle emitted, each collector is given the opportunity to receive the particle.</p> 
+ 
+    <h3>Renderer</h3> 
+    <img src="http://johnvey.github.com/splunk-viz-particle/splitter_diagram.png" width="401" height="257" alt="Splitter Diagram" style="float:right;margin-left:10px"> 
+    <p>The renderer is the master controller that is responsible for animating particles generated by emitters and linking them with their respective collectors. For each emitter, there are one or more collectors that can be attached. Once a particle is emitted from an emitter, each of the collectors are asked, in order, if it wants to collect the particle. If so, then the renderer will animate and render the particle as defined by the user. Uncollected particles will be dimmed and flow off-screen.</p> 
+ 
+    <h3>Field Splitters</h3> 
+    <p>Field splitters are the main point of user interaction in the Particle visualization. They are composed of a single collector and emitter, and render the field value of the particles that enter its collector through text, image, frequency histogram, or some combination of those three. Splitters also define how emitted particles are rendered.</p> 
+ 
+ 
+ 
+    <h2>Motivations</h2> 
+    <p> 
+    Humans are not adept at evaluating large masses of raw data. Particle visualization is a way to represent large masses of data in such a way that is more comprehensible through the following means:
+    </p> 
+ 
+    <ul> 
+        <li>Homogenize and iconify all events. In order to visualize large data sets in a single screen yet retain resolution on the discrete events, each event must be reduced to an abstract representation using small shapes or icons. Homogenizing those representations allows the user to quickly group like items and also assess the pattern of the entire data set.</li> 
+        <li>Animate events based on arrival-order. Since time is a primary dimension in real-time search, rendering events such that their spatial relationship in 2D or 3D space is proportional to their arrival-order allows users to easily comprehend the time distribution of events.</li> 
+        <li>Illustrate significant events. Humans excel at detecting visual pattern anomalies so altering event representation allows users to efficiently identify significant events. Users should be able to add criteria that flags events as significant.</li> 
+    </ul> 
+    
+ 
+ 
+ 
+    <h2>Known Issues</h2> 
+ 
+    <h3>Browser performance</h3> 
+    <p>Performance of the Splunk Particle Flash movie varies wildly among different platforms. We are still trying to isolate the performance issue, and will update this page when more information is available. Listed below are our observations on CPU load.</p> 
+ 
+    <p>OS/browser combinations that consume a low percentage of CPU (~25%)</p> 
+    <ul> 
+        <li>OSX + FF3</li> 
+        <li>Win7 + IE9</li> 
+ 
+    </ul> 
+    
+    <p>OS/browser combinations that consume a high percentage of CPU (~75%)</p> 
+ 
+    <ul> 
+        <li>OSX + Chrome</li> 
+        <li>OSX + FF4</li> 
+        <li>Win7 + Chrome</li> 
+        <li>Win7 + FF3</li> 
+        <li>Win7 + FF4</li> 
+    </ul> 
+ 
+ 
+    <h2>Feedback</h2> 
+    <p>We love to hear feedback! Please <a href="mailto:johnvey@splunk.com">email us</a>, or post a question over on <a href="http://answers.splunk.com">Splunk Answers</a>.</p> 
+    <p>Also, try typing <code>mario</code> into the movie when it's running.</p> 
+    
+    <br /> 
+    <br /> 
+    
+    <div id="disqus_thread"></div> 
+    <script type="text/javascript"> 
+        var disqus_shortname = 'metasplunk';
+        var disqus_identifier = 'particle_home';
+        var disqus_url = 'http://www.metasplunk.com/projects/particle';
+ 
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script> 
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript> 
+    <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a> 
+    
+    
+    <div id="footer"> 
+        <p>&copy; Copyright 2011 Splunk, Inc. All rights reserved.</p> 
+    </div> 
+ 
+ 
+ 
+</div> 
+ 
+</body> 
+</html> 
