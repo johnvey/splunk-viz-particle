@@ -210,7 +210,6 @@
             <ol>
                 <li>highlight the receiving splitter</li>
                 <li>click and drag the connection handle (small square to the top left of the splitter) to another splitter, or root emitter, and release the mouse button when then connection end changes to a circle</li>
-                <li>if there are multiple splitters attached to an output, set the "collect priority" to determine which splitter will attempt to siphon off the event if it contains the monitored field</li>
             </ol>
         </li>
         <li><strong>Adjust splitter priority</strong> - if there are multiple splitters attached to an output, set the "collect priority" to determine which splitter will attempt to siphon off the event; higher numbers will be queried first</li>
@@ -254,10 +253,12 @@ FlashParticlesBeta_0_5_0.controls.imageExtension = .png</pre>
  
     <h3>Browser performance</h3> 
     <p>Performance of the Splunk Particle Flash movie varies wildly among different platforms. We are still trying to isolate the performance issue, and will update this page when more information is available. Listed below are our observations on CPU load.</p> 
-    <p>OS/browser combinations that consume a low percentage of CPU (~25%)</p> 
+    <p>OS/browser combinations that consume a low percentage of CPU (&lt;25%)</p> 
     <ul> 
         <li>OSX + FF3</li> 
         <li>Win7 + IE9</li> 
+        <li>WinXP + FF3</li> 
+        <li>WinXP + IE8</li> 
  
     </ul> 
     <p>OS/browser combinations that consume a high percentage of CPU (~75%)</p> 
@@ -267,6 +268,7 @@ FlashParticlesBeta_0_5_0.controls.imageExtension = .png</pre>
         <li>Win7 + Chrome</li> 
         <li>Win7 + FF3</li> 
         <li>Win7 + FF4</li> 
+        <li>WinXP + Chrome</li> 
     </ul> 
  
  
